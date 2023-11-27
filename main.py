@@ -3,6 +3,7 @@ class Filme:
         self.nome = nome
         self.ano = ano
         self.duracao = duracao
+        self.likes=0
 
 vingadores = Filme('vingadores - guerra infinita', 2018, 160)
-print(vingadores)
+print(vingadores.nome)
