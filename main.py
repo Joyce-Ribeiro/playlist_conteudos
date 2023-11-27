@@ -19,12 +19,12 @@ class Programa:
     def nome(self, novo_nome):
         self.__nome = novo_nome.title()
 
-class Filme:
+class Filme(Programa):
     def __init__(self, nome, ano, duracao):
-        self.__nome = nome.title()
+        self._nome = nome.title()
         self.ano = ano
         self.duracao = duracao
-        self.__likes=0
-        
+        self._likes = 
+
 vingadores = Filme('vingadores - guerra infinita', 2018, 160)
 print(vingadores.nome)
