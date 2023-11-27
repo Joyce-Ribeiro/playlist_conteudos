@@ -21,10 +21,8 @@ class Programa:
 
 class Serie(Programa):
     def __init__(self, nome, ano, temporadas):
-        self._nome = nome.title()
-        self.ano = ano
+        super().__init__(nome, ano)
         self.temporadas = temporadas
-        self._likes = 0
 
 atlanta = Serie('atlanta', 2018, 2)
 print(f'Nome: {atlanta.nome} - Ano: {atlanta.ano}')
