@@ -19,7 +19,7 @@ class Programa:
     def nome(self, novo_nome):
         self.__nome =novo_nome.title()
 
-class Serie:
+class Serie(Programa):
     def __init__(self, nome, ano, temporadas):
         self._nome = nome.title()
         self.ano = ano
