@@ -21,10 +21,8 @@ class Programa:
 
 class Filme(Programa):
     def __init__(self, nome, ano, duracao):
-        self._nome = nome.title()
-        self.ano = ano
+        super().__init__(nome, ano)
         self.duracao = duracao
-        self._likes = 
 
 vingadores = Filme('vingadores - guerra infinita', 2018, 160)
 print(vingadores.nome)
